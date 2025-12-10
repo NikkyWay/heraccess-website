@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#landing {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #d8d7d0;
+}
+
+#landingLogo {
+  width: 20%;
+  height: 20%;
+}
+
+.aboutUs {
+  width: 100%;
+  min-height: 10vh;
+  background-color: rgb(87, 50, 50)
+}
