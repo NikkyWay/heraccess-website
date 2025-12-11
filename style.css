@@ -10,9 +10,9 @@ body {
 header {
     width: 100%;
     height: 80px;
-    background: rgba(255,255,255,0.75);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    background: rgba(245, 245, 245, 0.92); /* почти белый, но мягкий */
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
     position: fixed;
     top: 0;
     left: 0;
@@ -25,11 +25,11 @@ header {
 
 header .inner {
     width: 100%;
-    max-width: 1400px;
-    padding: 0px 60px;
+    max-width: 1200px;
+    padding: 0 60px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     box-sizing: border-box;
 }
 
@@ -39,8 +39,12 @@ header .inner {
     color: #8a4fff;
 }
 
+header nav {
+    margin-left: auto;      /* прижать меню вправо */
+}
+
 nav a {
-    margin: 0 18px;
+    margin: 0 16px;
     text-decoration: none;
     color: #555;
     font-size: 15px;
@@ -50,29 +54,22 @@ nav a:hover {
     color: #8a4fff;
 }
 
-.lang {
-    background: #dad9d7;
-    padding: 6px 12px;
-    border-radius: 6px;
-    font-size: 14px;
-    cursor: pointer;
-}
-
 /* ================= HERO ================= */
 
-/* фон героя + отступ от фиксированного хедера */
 .hero-wrapper {
-    max-height: 600px;
     width: 100%;
     background: #f5f1e8;
-    margin-top: 0px;          /* высота header */
+    margin-top: 80px;                         /* высота header */
+    min-height: calc(100vh - 80px);           /* ровно первый экран */
+    display: flex;
+    align-items: center;
     box-sizing: border-box;
 }
 
 .hero {
-    max-width: 1400px;
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 0px 60px;   /* верх/бока/низ */
+    padding: 40px 60px 35px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -80,18 +77,30 @@ nav a:hover {
 }
 
 .hero-text {
-    max-width: 550px;
+    max-width: 520px;
+}
+
+.hero-tag {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 14px;
+    font-size: 12px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    border-radius: 999px;
+    background: #efe6ff;
+    color: #7c3aed;
 }
 
 .hero h1 {
     font-size: 46px;
-    margin: 0 0 20px;          /* только снизу 20px */
+    margin: 0 0 20px;
 }
 
 .hero p {
     font-size: 17px;
     line-height: 1.6;
-    margin-bottom: 30px;
+    margin: 0 0 30px;
 }
 
 .btn {
@@ -109,14 +118,112 @@ nav a:hover {
 }
 
 .hero-img img {
-    width: 460px;
+    width: 420px;
     max-width: 100%;
     height: auto;
     opacity: 0.8;
 }
 
-/* ================= ДРУГИЕ СЕКЦИИ ================= */
+/* ================= ОБЩИЙ ОТСТУП СЕКЦИЙ НИЖЕ ================= */
 
 section {
-    padding: 0px 0;
+    padding: 0;
+}
+
+/* ===== ABOUT SECTION ===== */
+
+.about-section {
+    background: #fafafa;
+    padding: 72px 0 96px;
+    scroll-margin-top: 100px;
+}
+
+.about-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 60px;
+    box-sizing: border-box;
+}
+
+.about-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0 0 32px;
+}
+
+/* сетка: 2 блока слева, один справа */
+.about-layout {
+    display: grid;
+    grid-template-columns: 2fr 1.2fr;
+    grid-template-rows: auto auto;
+    gap: 24px;
+}
+
+/* базовый стиль блока */
+.about-block {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px 22px;
+    box-sizing: border-box;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.03);
+}
+
+.about-block h3 {
+    font-size: 22px;
+    margin: 0 0 10px;
+}
+
+.about-block p {
+    margin: 0 0 10px;
+    line-height: 1.6;
+    font-size: 16px;
+    color: #444;
+}
+
+/* позиционирование в гриде */
+.about-mission {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.about-problems {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.about-ai {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+/* адаптив: на мобильных всё в столбик */
+@media (max-width: 900px) {
+    header .inner {
+        padding: 0 20px;
+    }
+
+    .hero {
+        padding: 40px 20px 60px;
+        flex-direction: column;
+        text-align: left;
+        gap: 32px;
+    }
+
+    .hero-img img {
+        width: 260px;
+    }
+
+    .about-inner {
+        padding: 0 20px;
+    }
+
+    .about-layout {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .about-ai {
+        grid-column: 1;
+        grid-row: auto;
+    }
 }
