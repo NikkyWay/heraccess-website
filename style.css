@@ -63,8 +63,8 @@ nav a:hover {
 .hero-wrapper {
     width: 100%;
     background: #f5f1e8;
-    margin-top: 10px;                         /* высота header */
-    min-height: calc(100vh - 80px);           /* первый экран */
+    margin-top: 10px;                         
+    min-height: calc(100vh - 80px);         
     display: flex;
     align-items: center;
     box-sizing: border-box;
@@ -80,7 +80,6 @@ nav a:hover {
     box-sizing: border-box;
 }
 
-/* левая колонка */
 
 .hero-text {
     max-width: 520px;
@@ -105,7 +104,7 @@ nav a:hover {
 }
 
 .hero-highlight {
-    color: #222;            /* можно сделать #111 для большего контраста */
+    color: #222;           
 }
 
 .hero h1 br + * {
@@ -166,17 +165,17 @@ nav a:hover {
     width: 100%;
 }
 
-/* правая колонка — иллюстрация */
+
 
 .hero-img img {
     width: 460px;
     max-width: 100%;
     height: auto;
     opacity: 0.9;
-    transform: translateY(10px);  /* чуть опускаем, чтобы композиция не висела */
+    transform: translateY(10px); 
 }
 
-/* ================= ОБЩИЙ ОТСТУП СЕКЦИЙ НИЖЕ ================= */
+
 
 section {
     padding: 0;
@@ -203,7 +202,7 @@ section {
     margin: 0 0 32px;
 }
 
-/* сетка: 2 блока слева, один справа */
+
 .about-layout {
     display: grid;
     grid-template-columns: 2fr 1.2fr;
@@ -211,7 +210,7 @@ section {
     gap: 24px;
 }
 
-/* базовый стиль блока */
+
 .about-block {
     background: #ffffff;
     border-radius: 12px;
@@ -232,7 +231,7 @@ section {
     color: #444;
 }
 
-/* позиционирование в гриде */
+
 .about-mission {
     grid-column: 1;
     grid-row: 1;
@@ -248,7 +247,7 @@ section {
     grid-row: 1;
 }
 
-/* адаптив: на мобильных всё в столбик */
+
 
 @media (max-width: 900px) {
     header .inner {
