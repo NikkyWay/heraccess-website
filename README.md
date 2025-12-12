@@ -25,7 +25,7 @@ Project is developed as volunteer work in collaboration with the HerAccess found
 ---
 
 ## 📂 File Structure
-/src
-style.css
-index.html
-README.md
+- /src
+- style.css
+- index.html
+- README.md
