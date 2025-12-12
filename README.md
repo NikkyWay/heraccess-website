@@ -1,31 +1,43 @@
-# HerAccess — Website (Volunteer Project)
-
-A modern, minimalistic website for **HerAccess**, an AI-powered educational startup supporting women and girls with limited access to learning.
-
-This repository contains the frontend part of the platform.  
-Project is developed as volunteer work in collaboration with the HerAccess founders.
 
 ---
 
-## 🚀 Tech Stack
-- **HTML5**
-- **CSS3**
-- Responsive layout
-- Component-based structure
+## 📌 Current Progress
+- [x] Header & navigation  
+- [x] Hero section  
+- [x] About Us section  
+- [x] How It Works section  
+- [x] For Patners section
+- [x] Volunteers section
+- [x] Contact & Donate
+- [x] Footer  
+
 
 ---
 
-## 🎯 Project Goals
-- Present the mission of HerAccess
-- Attract partners, NGOs, volunteers
-- Explain how the AI-powered platform works
-- Provide clear onboarding flow for users and supporters
-- Deliver clean, modern and international design
+## 🧩 Figma Design
+The project is being implemented according to the official Figma design provided by the HerAccess design team.  
+(Will add the link once the designer sends it.)
 
 ---
 
-## 📂 File Structure
-- /src
-- style.css
-- index.html
-- README.md
+## 🤝 About Collaboration
+This website is created in cooperation with:
+**HerAccess Founders** — project leads & content providers  
+**Volunteer developer:** *Andrii (NikkyWay)*
+
+---
+
+## 📬 Contact
+If you want to contribute or contact the maintainers:
+
+- Instagram: `@her.access_`
+- Email: `heraccess@gmail.com`
+
+If you want to contact me:
+- Telegram: @nikkyway
+- Email: `brawl20and@gmail.com`
+---
+
+## ⭐ License
+This project is developed for volunteer, non-commercial use.
+
