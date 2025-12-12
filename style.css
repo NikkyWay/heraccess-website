@@ -359,11 +359,18 @@ section {
 }
 
 .how-summary {
-    margin-top: 24px;
+    font-size: 32px;
+    font-weight: 600;
+    margin: 32px auto 0;              
     max-width: 720px;
+    padding: 14px 18px;
+    background: #fafafa;
+    border-radius: 12px;
+    text-align: center;
     font-size: 15px;
     line-height: 1.6;
-    color: #555;
+    color: #4b5563;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.02);
 }
 
 
@@ -379,6 +386,12 @@ section {
     .how-steps li::before {
         left: 16px;
         top: 16px;
+    }
+
+    .how-summary {
+        margin: 24px 0 0;
+        padding: 12px 14px;
+        box-shadow: none;
     }
 }
 
