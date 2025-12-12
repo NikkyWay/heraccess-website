@@ -16,7 +16,6 @@
 
 ## 🧩 Figma Design
 The project is being implemented according to the official Figma design provided by the HerAccess design team.  
-(Will add the link once the designer sends it.)
 
 ---
 
@@ -40,4 +39,5 @@ If you want to contact me:
 
 ## ⭐ License
 This project is developed for volunteer, non-commercial use.
+
 
