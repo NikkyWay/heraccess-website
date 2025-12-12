@@ -285,6 +285,104 @@ section {
     }
 }
 
+/* ===== HOW IT WORKS SECTION ===== */
+
+#how {
+    scroll-margin-top: 100px; 
+}
+
+.how-section {
+    background: #ffffff;
+    padding: 72px 0 96px;
+}
+
+.how-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 60px;
+    box-sizing: border-box;
+}
+
+.how-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0 0 28px;
+}
+
+
+.how-steps {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 16px;
+    counter-reset: how-step;
+}
+
+.how-steps li {
+    position: relative;
+    counter-increment: how-step;
+    background: #fafafa;
+    border-radius: 12px;
+    padding: 18px 20px 18px 56px;
+    box-sizing: border-box;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.02);
+}
+
+.how-steps li::before {
+    content: counter(how-step);
+    position: absolute;
+    left: 18px;
+    top: 18px;
+    width: 26px;
+    height: 26px;
+    border-radius: 999px;
+    background: #8a4fff;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.how-steps h3 {
+    margin: 0 0 4px;
+    font-size: 18px;
+}
+
+.how-steps p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #444;
+}
+
+.how-summary {
+    margin-top: 24px;
+    max-width: 720px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555;
+}
+
+
+@media (max-width: 900px) {
+    .how-inner {
+        padding: 0 20px;
+    }
+
+    .how-steps li {
+        padding: 16px 16px 16px 52px;
+    }
+
+    .how-steps li::before {
+        left: 16px;
+        top: 16px;
+    }
+}
+
+
 /* ===== FOOTER ===== */
 
 .footer {
